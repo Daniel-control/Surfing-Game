@@ -10,14 +10,20 @@ radius = 52.9541
 position = Vector2( -1.74002, -0.723267 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 227.608, 99.4844 )
+position = Vector2( 73.608, 97.4844 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
-position = Vector2( -1.59247, -1.63385 )
+position = Vector2( 1.40753, 1.36615 )
 scale = Vector2( 0.213139, 0.214274 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 1.05252, -4.06738 )
+position = Vector2( 5.05252, -0.06738 )
 shape = SubResource( 1 )
+
+[node name="Wall" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Wall"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
