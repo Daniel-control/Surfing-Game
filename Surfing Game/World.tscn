@@ -34,14 +34,15 @@ position = Vector2( 0, -1.05261 )
 shape = SubResource( 2 )
 
 [node name="Gun" type="Area2D" parent="."]
+position = Vector2( 334.819, 372.129 )
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="Gun"]
-position = Vector2( 26.7862, -35.5347 )
+position = Vector2( 15.1951, -29.0377 )
 scale = Vector2( 0.259647, 0.275479 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gun"]
-position = Vector2( 19.3853, -20.6777 )
+position = Vector2( 12.1652, -15.3495 )
 shape = SubResource( 3 )
 [connection signal="body_entered" from="Gun" to="Gun" method="_on_Gun_body_entered"]

@@ -6,5 +6,5 @@ func _on_Gun_body_entered(body):
 	if body.name == "Player":
 		var same_gun = "yes"
 		while same_gun == "yes":
-			var PlayerPos = get_node("Player")
-			
+			var player_pos = get_position()
+			print(player_pos)
