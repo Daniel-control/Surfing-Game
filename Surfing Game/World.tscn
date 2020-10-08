@@ -13,7 +13,7 @@ script/source = "extends StaticBody2D
 extents = Vector2( 54.6299, 129.539 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 41.3133, 30.0422 )
+extents = Vector2( 27.0981, 20.6729 )
 
 [node name="World" type="Node2D"]
 position = Vector2( -1.74002, -0.723267 )
@@ -34,15 +34,15 @@ position = Vector2( 0, -1.05261 )
 shape = SubResource( 2 )
 
 [node name="Gun" type="Area2D" parent="."]
-position = Vector2( 334.819, 372.129 )
+position = Vector2( 314.874, 399.83 )
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="Gun"]
-position = Vector2( 15.1951, -29.0377 )
-scale = Vector2( 0.259647, 0.275479 )
+position = Vector2( 26.8296, -8.53918 )
+scale = Vector2( 0.209872, 0.191078 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gun"]
-position = Vector2( 12.1652, -15.3495 )
+position = Vector2( 22.1375, 0.163013 )
 shape = SubResource( 3 )
 [connection signal="body_entered" from="Gun" to="Gun" method="_on_Gun_body_entered"]
